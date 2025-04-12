@@ -243,6 +243,62 @@ footer {
   display: block;
 }
 
+.fun-zone-section {
+  background-color: #fff4f7;
+  border-top: 1px solid #e5d5e0;
+}
+
+.fun-zone-title {
+  font-family: 'DM Serif Text', serif;
+  font-size: 2.2rem;
+  color: #b66e9e;
+}
+
+.fun-zone-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.fun-zone-btn {
+  background-color: #fff;
+  border: 2px solid #b66e9e;
+  border-radius: 16px;
+  font-size: 1.2rem;
+  font-family: 'Lora', serif;
+  text-decoration: none;
+  color: #b66e9e;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  min-height: 150px;
+}
+
+.fun-zone-btn:hover {
+  background-color: #b66e9e;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.fun-zone-btn img {
+  max-width: 70px;
+  height: auto;
+}
+
+
+
+@media (max-width: 576px) {
+  .fun-zone-btn {
+    font-size: 1.1rem;
+    padding: 1.2rem 0.8rem;
+  }
+
+  .fun-zone-title {
+    font-size: 1.8rem;
+  }
+}
+
+
 @media (max-width: 768px) {
   .featurette {
     display: flex;
