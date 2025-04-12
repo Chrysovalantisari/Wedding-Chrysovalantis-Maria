@@ -1,0 +1,231 @@
+body {
+    background-color: #fff4f7;
+    font-family: 'Lora', serif;
+    color: #333;
+    margin: 0;
+  }
+  
+  .love-score-section {
+    background-color: #fff4f7;
+    padding: 4rem 1rem;
+  }
+  
+  .section-title {
+    font-family: 'DM Serif Text', serif;
+    color: #b66e9e;
+    font-size: 2.4rem;
+  }
+  
+  .input-name {
+    border: 2px solid #e9c7d1;
+    border-radius: 12px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .btn-pink {
+    background-color: #b66e9e;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-pink:hover {
+    background-color: #a4548c;
+  }
+  
+  .result-box {
+    background-color: #ffffff;
+    border: 2px dashed #b66e9e;
+    padding: 20px;
+    border-radius: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .score-result {
+    font-size: 2rem;
+    color: #b66e9e;
+    margin-bottom: 10px;
+  }
+  
+  .score-message {
+    font-style: italic;
+  }
+
+  .love-horoscope-section {
+    background-color: #ffffff;
+    border-top: 4px dashed #b66e9e;
+    padding: 4rem 1rem;
+  }
+  
+  .btn-purple {
+    background-color: #7f5297;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-purple:hover {
+    background-color: #643d7c;
+  }
+  
+  @media (max-width: 576px) {
+    .btn-purple, .btn-pink {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    .input-name {
+      font-size: 0.95rem;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .score-result {
+      font-size: 1.4rem;
+    }
+  }
+
+  .wedding-prophecy-section {
+    background-color: #fefefe;
+    border-top: 4px dashed #7fb089;
+    padding: 4rem 1rem;
+  }
+  
+  .btn-green {
+    background-color: #7fb089;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-green:hover {
+    background-color: #669b74;
+  }
+  
+  @media (max-width: 576px) {
+    .btn-green {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .score-result {
+      font-size: 1.5rem;
+    }
+  
+    .score-message {
+      font-size: 1rem;
+    }
+  }
+  #chart {
+    margin: 0 auto;
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    
+  }
+  
+  text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 12px;
+    fill: #4a4a4a;
+    pointer-events: none;
+   
+       
+  }
+  
+  .love-wheel-section .game-title {
+    margin-top: 2rem;
+  }
+  
+  #wheel-result {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #b66e9e;
+    font-weight: bold;
+  }
+
+  .game-section:nth-of-type(4) {
+  border-top: 4px dashed #e49fc8;
+
+  @media (max-width: 576px) {
+    .game-title {
+      font-size: 1.7rem;
+    }
+  
+    input[type="text"] {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .game-button {
+      width: 100%;
+    }
+  
+    #chart {
+      max-width: 260px;
+    }
+  
+    #wheel-result {
+      font-size: 1.2rem;
+    }
+  }
+  footer.fun-footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fdf3f8;
+    border-top: 4px dashed #e4c69f;
+    color: #b66e9e;
+    font-size: 1rem;
+    margin-top: 3rem;
+    
+  }
+  
+ 
+  
+  @media (max-width: 576px) {
+    .game-title {
+      font-size: 1.7rem;
+    }
+  
+    input[type="text"] {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .game-button {
+      width: 100%;
+    }
+  
+    #chart {
+      max-width: 260px;
+    }
+  
+    #wheel-result {
+      font-size: 1.2rem;
+    }
+  
+    footer.fun-footer {
+      font-size: 0.9rem;
+    }
+  }
+  }
