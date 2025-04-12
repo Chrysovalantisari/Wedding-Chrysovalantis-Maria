@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8fb;
+    color: #b66e9e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .gallery-under .container {
+    max-width: 500px;
+    padding: 2rem;
+    background-color: #fff;
+    border: 4px dashed #e49fc8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .title {
+    font-family: 'DM Serif Text', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .construction-icon {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .small-note {
+    font-size: 0.9rem;
+    color: #c084b2;
+  }
+  
