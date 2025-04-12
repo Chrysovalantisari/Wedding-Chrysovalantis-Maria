@@ -12,49 +12,37 @@
   color: #333;
 }
 
-.hero-banner {
-  background-image: url("./wedding Banner.png");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  padding: 100px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+
+.hero-banner-wrapper {
+  height: auto;
+  overflow: hidden;
 }
 
-/* Mobile First */
+.banner-image {
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+.hero-content {
+  z-index: 2;
+  width: 90%;
+}
+
 @media (max-width: 576px) {
-  .hero-banner {
-    background-size: contain;
-    padding: 40px 0;
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
   }
 }
-
-@media (min-width: 577px) and (max-width: 768px) {
-  .hero-banner {
-    background-size: cover;
-    padding: 60px 0;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1200px) {
-  .hero-banner {
-    padding: 80px 0;
-  }
-}
-
-@media (min-width: 1201px) {
-  .hero-banner {
-    padding: 120px 0;
-  }
-}
-
 
 .bigger-text {
   font-size: 1.4rem;
 }
+
 
 .section-love {
   background-color: lch(97.31% 0.35 17.6);
@@ -91,6 +79,42 @@ img {
   box-shadow: none;
 }
 
+.footer-banner {
+  background-image: url("./Wedding Footer.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-shadow: none;
+  min-height: 50vh;
+    height: auto;
+  overflow: hidden;
+}
+.footer-banner-wrapper {
+  height: auto;
+  overflow: hidden;
+}
+
+.footer-content {
+  z-index: 2;
+  width: 100%;
+}
+
+
+@media (max-width: 576px) {
+  .footer-banner {
+    padding: 60px 0;
+  }
+}
+
 .featurette-divider {
   border: none;
   height: 1px;
@@ -123,8 +147,7 @@ footer.border-top {
 
 .stats-section .raw {
   background-color: #fefdfb;
-  padding: 4rem 0;
-  padding-bottom: 0;
+  padding: 4rem 0 0 0;
   margin-bottom: 0;
   box-shadow: 0;
 }
@@ -133,9 +156,10 @@ footer.border-top {
   background-color: #fff4eb;
   border: 1px solid #f0cfc2;
   border-radius: 16px;
-  padding: 30px;
-  width: 310px;
-  height: 310px;
+  padding: 20px;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,22 +183,6 @@ footer.border-top {
   background-color: #f7f7f7;
 }
 
-.footer-banner {
-  background-image: url(./Wedding\ Footer.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 150px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 0;
-  margin: 0;
-  margin-top: 0;
-  box-shadow: none;
-  margin-bottom: 0;
-}
 * {
   margin: 0;
   padding: 0;
@@ -187,16 +195,13 @@ footer {
   border-top: none !important;
 }
 
-
 .countdown-wrapper {
-  /* background-color: #fff4eb;
-  border: 2px solid #f0cfc2; */
   color: #1e1e2f;
   padding: 60px 30px;
   border-radius: 10px;
   font-family: 'Josefin Sans', sans-serif;
   max-width: 1300px;
-  margin:  auto;
+  margin: auto;
 }
 
 .countdown-title {
@@ -207,14 +212,17 @@ footer {
 
 .countdown-line {
   border-top: 1px solid #1e1e2f;
-  margin-bottom: 30px;
-  width: 1270px;
+  margin-bottom: 30px;  
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;  
+  max-width: 600px;
 }
 
 .countdown-boxes {
-  gap: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .time-box {
@@ -235,39 +243,6 @@ footer {
   display: block;
 }
 
-
-/* Μικρά κινητά (έως 576px) */
-@media (max-width: 576px) {
-  .hero-banner {
-    background-size: contain;
-    padding: 40px 0;
-  }
-}
-
-/* Tablets (έως 768px) */
-@media (min-width: 577px) and (max-width: 768px) {
-  .hero-banner {
-    background-size: cover;
-    padding: 60px 0;
-  }
-}
-
-/* Κανονικά laptops/PC (768px – 1200px) */
-@media (min-width: 769px) and (max-width: 1200px) {
-  .hero-banner {
-    background-size: cover;
-    padding: 80px 0;
-  }
-}
-
-/* Μεγάλες οθόνες, π.χ. TV (πάνω από 1200px) */
-@media (min-width: 1201px) {
-  .hero-banner {
-    background-size: cover;
-    padding: 120px 0;
-  }
-}
-/* Responsive για featurette rows */
 @media (max-width: 768px) {
   .featurette {
     display: flex;
