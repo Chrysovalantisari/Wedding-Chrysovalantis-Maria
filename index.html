@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="gr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chrysovalantis & Maria</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Mea+Culpa&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<script>
+  const weddingDate = new Date("September 6, 2025 16:30:00").getTime();
+
+  const countdownFunction = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+
+    if (distance < 0) {
+      clearInterval(countdownFunction);
+      document.getElementById("countdown").innerHTML = "💍 Ήρθε η μέρα! Συγκίνηση & χαρά!";
+    }
+  }, 1000);
+</script>
+
+<body>
+  <section>
+    <div class="p-5 text-center hero-banner">
+      <div class="container py-5">
+        <h1 class="custom-title text-body-emphasis pb-2">Χρυσοβαλάντης & Μαρία </h1>
+        <p class="col-lg-8 mx-auto lead wedding-message">
+          <strong class="text-body-emphasis">Κλείσαμε την ημερομηνία και φοράμε τα καλά μας! 6 Σεπτεμβρίου 2025  εσύ έρχεσαι;</strong>
+        </p>
+        <!-- <div id="countdown" class="countdown-timer pt-4">
+          💒 Σε <span id="days"></span> ημέρες,
+          <span id="hours"></span> ώρες,
+          <span id="minutes"></span> λεπτά,
+          <span id="seconds"></span> δευτερόλεπτα το "Κρεμάσαμε"! 
+          <img src="./gallows-hang-svgrepo-com.svg" alt="gallows" height="40" width="30" style="margin-left: 5px;">
+        </div> -->
+        
+      </div>
+    </div>
+      </div>
+    </div>
+  </section>
+  <!-- <div class="countdown-wrapper text-center">
+    <div class="countdown-title">COMING SOON</div>
+    <hr class="countdown-line">
+    <div class="countdown-boxes d-flex justify-content-center">
+      <div class="time-box">
+        <span id="days" class="time-number">00</span>
+        <span class="time-label">DAYS</span>
+      </div>
+      <div class="time-box">
+        <span id="hours" class="time-number">00</span>
+        <span class="time-label">HOURS</span>
+      </div>
+      <div class="time-box">
+        <span id="minutes" class="time-number">00</span>
+        <span class="time-label">MINUTES</span>
+      </div>
+      <div class="time-box">
+        <span id="seconds" class="time-number">00</span>
+        <span class="time-label">SECONDS</span>
+      </div>
+    </div>
+  </div>
+   -->
+
+  <section>
+    
+
+  </section>
+
+
+
+
+  <section class="section-love">
+    <div class="countdown-wrapper text-center">
+      <div class="countdown-title">Η μεγάλη μέρα πλησιάζει... ❤️</div>
+      <hr class="countdown-line">
+      <div class="countdown-boxes d-flex justify-content-center">
+        <div class="time-box">
+          <span id="days" class="time-number">00</span>
+          <span class="time-label">DAYS</span>
+        </div>
+        <div class="time-box">
+          <span id="hours" class="time-number">00</span>
+          <span class="time-label">HOURS</span>
+        </div>
+        <div class="time-box">
+          <span id="minutes" class="time-number">00</span>
+          <span class="time-label">MINUTES</span>
+        </div>
+        <div class="time-box">
+          <span id="seconds" class="time-number">00</span>
+          <span class="time-label">SECONDS</span>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="container marketing">
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Ξεκινήσαμε κάπως έτσι... </h2>
+          <p class="lead">Γνωριστήκαμε αρχές <strong>Νοέμβρη του 2017</strong>.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="./Wedding First 700x700.png" class="img-fluid" alt="Πρώτη γνωριμία">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Κάπου στη μέση τα βρήκαμε...</h2>
+          <p class="lead">Και πήραμε την απόφαση να <strong>προχωρήσουμε μαζί</strong>.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="./Wedding Sec 700x700.png" class="img-fluid" alt="Μέσα στη σχέση">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Τώρα περιμένουμε με ανυπομονησία τον Σεπτέμβρη του 2025...</h2>
+          <p class="lead">Εκεί <strong>ξεκινά μια νέα ζωή</strong>.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="./Wedding last.png" width="700" height="700" class="img-fluid" alt="Ο γάμος μας">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+    </div>
+  </section>
+
+  <section class="stats-section text-center py-5 back">
+    <div class="container">
+      <div class="row justify-content-between align-items-start gx-4">
+        <div class="col-lg-3 col-md-6 col-12 d-flex flex-column align-items-center">
+          <div class="icon-box mb-3">
+            <img src="./suit-svgrepo-com.svg" alt="Groom Icon" class="icon-img">
+          </div>
+          <h2 class="fw-bold">14:00</h2>
+          <p class="text-uppercase small">Αλλάματα Γαμπρού</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 d-flex flex-column align-items-center">
+          <div class="icon-box mb-3">
+            <img src="./bride-dress-svgrepo-com.svg" alt="Bride Icon" class="icon-img">
+          </div>
+          <h2 class="fw-bold">14:30</h2>
+          <p class="text-uppercase small">Αλλάματα Νύφης</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 d-flex flex-column align-items-center">
+          <div class="icon-box mb-3">
+            <img src="./church-svgrepo-com.svg" alt="Church Icon" class="icon-img">
+          </div>
+          <h2 class="fw-bold">16:30</h2>
+          <p class="text-uppercase small">Τελετή στην Εκκλησία</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12 d-flex flex-column align-items-center">
+          <div class="icon-box mb-3">
+            <img src="./wedding-couple-svgrepo-com.svg" alt="Couple Icon" class="icon-img">
+          </div>
+          <h2 class="fw-bold">20:00</h2>
+          <p class="text-uppercase small">Δεξίωση</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer_background footer-banner">
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-0 my-0 ">
+      <div class="footer-center">        
+        <!-- <p class="footer-text">💍 Χ&Μ 06.09.2025</p> -->
+      </div>
+    </footer>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

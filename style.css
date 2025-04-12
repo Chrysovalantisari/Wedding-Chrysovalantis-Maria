@@ -1,0 +1,297 @@
+.custom-title {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wedding-message {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  text-align: center;
+  color: #333;
+}
+
+.hero-banner {
+  background-image: url("./wedding Banner.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Mobile First */
+@media (max-width: 576px) {
+  .hero-banner {
+    background-size: contain;
+    padding: 40px 0;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero-banner {
+    background-size: cover;
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .hero-banner {
+    padding: 80px 0;
+  }
+}
+
+@media (min-width: 1201px) {
+  .hero-banner {
+    padding: 120px 0;
+  }
+}
+
+
+.bigger-text {
+  font-size: 1.4rem;
+}
+
+.section-love {
+  background-color: lch(97.31% 0.35 17.6);
+  padding: 4rem 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.featurette-heading {
+  font-family: 'DM Serif Text', serif;
+  font-weight: bold;
+}
+
+.lead {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+}
+
+img {
+  border-radius: 12px;
+}
+
+.footer_background {
+  background-color: lch(97.31% 0.35 17.6);  
+  color: #fff0f5;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+  width: 100%;
+  border-radius: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+.featurette-divider {
+  border: none;
+  height: 1px;
+  background-color: #bfa980;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 3rem auto;
+  width: 100%;
+  opacity: 0.8;
+}
+
+footer.border-top {
+  border-top: 3px solid #fff;
+  width: 68%;
+}
+
+.footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-text {
+  font-style: bold;
+  text-align: center;
+  font-family: 'Allura', cursive;
+  font-size: 2rem;
+  color: #070002;
+}
+
+.stats-section .raw {
+  background-color: #fefdfb;
+  padding: 4rem 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  box-shadow: 0;
+}
+
+.icon-box {
+  background-color: #fff4eb;
+  border: 1px solid #f0cfc2;
+  border-radius: 16px;
+  padding: 30px;
+  width: 310px;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icon-img {
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+}
+
+.back {
+  background-color: #f7f7f7;
+}
+
+.footer-banner {
+  background-image: url(./Wedding\ Footer.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0;
+  margin: 0;
+  margin-top: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  border-top: none !important;
+}
+
+
+.countdown-wrapper {
+  /* background-color: #fff4eb;
+  border: 2px solid #f0cfc2; */
+  color: #1e1e2f;
+  padding: 60px 30px;
+  border-radius: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  max-width: 1300px;
+  margin:  auto;
+}
+
+.countdown-title {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.countdown-line {
+  border-top: 1px solid #1e1e2f;
+  margin-bottom: 30px;
+  width: 1270px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.countdown-boxes {
+  gap: 250px;
+}
+
+.time-box {
+  text-align: center;
+}
+
+.time-number {
+  font-size: 2.5rem;
+  font-weight: 600;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.time-label {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  display: block;
+}
+
+
+/* Μικρά κινητά (έως 576px) */
+@media (max-width: 576px) {
+  .hero-banner {
+    background-size: contain;
+    padding: 40px 0;
+  }
+}
+
+/* Tablets (έως 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero-banner {
+    background-size: cover;
+    padding: 60px 0;
+  }
+}
+
+/* Κανονικά laptops/PC (768px – 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .hero-banner {
+    background-size: cover;
+    padding: 80px 0;
+  }
+}
+
+/* Μεγάλες οθόνες, π.χ. TV (πάνω από 1200px) */
+@media (min-width: 1201px) {
+  .hero-banner {
+    background-size: cover;
+    padding: 120px 0;
+  }
+}
+/* Responsive για featurette rows */
+@media (max-width: 768px) {
+  .featurette {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featurette .col-md-7,
+  .featurette .col-md-5 {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .featurette img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+  }
+
+  .featurette-heading {
+    font-size: 1.4rem;
+  }
+}
