@@ -1,4 +1,5 @@
 
+
 var padding = {top:60, right:40, bottom:0, left:40},
     w = 400 - padding.left - padding.right,
     h = 400 - padding.top - padding.bottom,
@@ -22,8 +23,10 @@ var data = [
   {"label":"🤭 Πλάκα"},
   {"label":"👍 Like"},
   {"label":"🔥 Πάθος"},
-  {"label":"🌙 Όνειρο"}
-];
+  {"label":"🔥 Πάθος"},
+  {"label":"🔥 Πάθος"},
+
+]  
 
 var svg = d3.select('#chart')
   .append("svg")
