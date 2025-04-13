@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Lora&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="games.css">
-  <script src="https://d3js.org/d3.v3.min.js"></script>
 </head>
 <body>
 
@@ -76,15 +75,17 @@
       </div>
     </div>
   </section>
-
-  <section class="game-section text-center">
-    <h2 class="game-title">🎡 Ο Τροχός της Αγάπης</h2>
-    <p class="game-subtitle">Γύρισε τον τροχό και δες τι προβλέπει για την αγάπη σου!</p>
-    <div id="chart"></div>
+  <section class="wheel-section">
+    <div class="container">
+      <h2 class="title">🎡 Ο Τροχός της Αγάπης</h2>
+      <p class="subtitle">Γύρισε τον τροχό και δες τι προβλέπει για την αγάπη σου!</p>
+      <div id="chart"></div>
+      <div id="wheel-result"></div>
+      <div id="question"><h1></h1></div>
+    </div>
   </section>
-  
-  
-  <script src="games.js"></script>
   <script src="lovewheel.js"></script>
+  <script src="games.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
 </body>
 </html>
