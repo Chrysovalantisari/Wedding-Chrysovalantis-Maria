@@ -180,7 +180,12 @@ arcs.append("text")
 
 container.on("click", spin);
 
+const spinSound = new Audio("wheel-spin-click-slow-down-101152.mp3");
+
 function spin(){
+  spinSound.currentTime = 0
+  spinSound.play();
+  
   container.on("click", null);
   if(oldpick.length == data.length){
     return;
